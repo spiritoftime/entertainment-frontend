@@ -29,7 +29,7 @@ const Register = () => {
   } = useForm({ resolver: yupResolver(formSchema) });
   const submitHandler = async (e) => {
     const res = await fetch(
-      "https://spiritandtime-movie-app.onrender.com/api/auth/signup",
+      "https://spiritandtime-movie.onrender.com/api/auth/signup",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },

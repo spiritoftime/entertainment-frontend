@@ -46,7 +46,7 @@ const IndividualPage = ({ genre = "" }) => {
               title="Length"
               content={
                 genre === "movie"
-                  ? details.runtime
+                  ? details.runtime + " mins"
                   : details.episode_run_time + " mins"
               }
             />

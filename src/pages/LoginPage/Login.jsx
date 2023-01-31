@@ -103,7 +103,7 @@ const Login = () => {
         <div className="flex gap-2 text-xs mt-auto mb-6 text-center mx-auto">
           <p className=" text-gray-500">Don't have an account?</p>
           <a
-            href="/signup"
+            onClick={() => navigate("/signup")}
             className="cursor-pointer text-rose-500 font-medium"
           >
             Sign Up

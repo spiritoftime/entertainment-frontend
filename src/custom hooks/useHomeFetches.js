@@ -17,7 +17,7 @@ const useHomeFetches = (type) => {
   const [fetchedData, dispatch] = useReducer(fetchReducer, {});
 
   const getPopularMovies = async () => {
-    const response = await customFetch(`discover/${type}/`, {
+    const response = await customFetch(`discover/${type}`, {
       sort_by: "popularity.desc",
     });
     dispatch({ type: "popular", payload: response.results.slice(0, 6) });

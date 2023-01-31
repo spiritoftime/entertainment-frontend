@@ -1,0 +1,10 @@
+.partial-star::after {
+  content: "";
+  position: absolute;
+  background-color: yellow;
+  /* to set the pseudo element width with js you need a variable
+  see https://www.youtube.com/watch?v=LszEboGO_zw */
+
+  height: 100%;
+  width: 10%;
+}

@@ -14,7 +14,7 @@ const ProtectedRoute = ({ children }) => {
         return;
       }
       const res = await fetch(
-        "https://spiritandtime-movie-app.com/api/auth/verify",
+        "https://spiritandtime-movie-app.onrender.com/api/auth/verify",
         {
           method: "POST",
           body: JSON.stringify({

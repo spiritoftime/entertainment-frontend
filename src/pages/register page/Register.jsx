@@ -28,11 +28,14 @@ const Register = () => {
     formState: { errors },
   } = useForm({ resolver: yupResolver(formSchema) });
   const submitHandler = async (e) => {
-    const res = await fetch("http://127.0.0.1:5000/api/auth/signup", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email: e.email, password: e.password }),
-    });
+    const res = await fetch(
+      "https://spiritandtime-movie-app.onrender.com/api/auth/signup",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: e.email, password: e.password }),
+      }
+    );
     if (res.ok) navigate("/login");
     const data = await res.json();
     if (res.ok === false && data.msg)

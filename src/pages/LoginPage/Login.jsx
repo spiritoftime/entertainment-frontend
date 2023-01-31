@@ -29,7 +29,7 @@ const Login = () => {
   } = useForm({ resolver: yupResolver(formSchema) });
   const submitHandler = async (e) => {
     const res = await fetch(
-      "https://spiritandtime-movie-app.com/api/auth/login",
+      "https://spiritandtime-movie-app.onrender.com/api/auth/login",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },

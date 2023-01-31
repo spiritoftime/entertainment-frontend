@@ -108,7 +108,10 @@ const Register = () => {
         </form>
         <div className="flex gap-2 mt-auto mb-6 text-xs mx-auto">
           <p className=" text-gray-500">Already have an account?</p>
-          <a href="/login" className="cursor-pointer text-rose-500 font-medium">
+          <a
+            onClick={() => navigate("/login")}
+            className="cursor-pointer text-rose-500 font-medium"
+          >
             Sign In
           </a>
         </div>

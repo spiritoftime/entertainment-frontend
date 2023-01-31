@@ -8,7 +8,7 @@ const Navbar = () => {
     navigate("/bookmarks");
   };
   return (
-    <nav className="justify-between min-w-full md:min-w-fit md:h-[500px] md:mt-11 md:rounded-lg md:flex-col md:fixed flex p-4 bg-navColor">
+    <nav className="justify-between min-w-full lg:min-w-fit lg:h-[500px] lg:mt-11 lg:rounded-lg lg:flex-col lg:fixed flex p-4 bg-navColor">
       <div className="cursor-pointer" onClick={() => navigate("/")}>
         <svg width="25" height="20" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -17,7 +17,7 @@ const Navbar = () => {
           />
         </svg>
       </div>
-      <div className="flex md:flex-col gap-6">
+      <div className="flex lg:flex-col gap-6">
         <svg
           onClick={() => navigate("/")}
           className="cursor-pointer"

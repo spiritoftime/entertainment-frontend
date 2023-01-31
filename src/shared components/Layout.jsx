@@ -7,7 +7,7 @@ const Layout = () => {
   return (
     <main className="min-h-screen bg-darkBlue">
       <Navbar />
-      <div className="w-full md:w-[85%] lg:w-fit lg:mx-auto lg:max-w-[85%]  md:ml-auto md:mr-[5%]">
+      <div className="w-full lg:w-fit lg:mx-auto lg:max-w-[85%]  md:ml-auto md:mr-[5%]">
         <SearchBar />
         <Outlet></Outlet>
       </div>

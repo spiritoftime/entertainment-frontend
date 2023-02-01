@@ -8,7 +8,7 @@ const Label = ({ category, type, relativePath }) => {
       search: createSearchParams({ page: 1 }).toString(),
     });
   };
-  // category is popular, type is movie
+  // category is popular/ upcoming etc, type is movie
   return (
     <div className="px-4 pt-4 items-center flex justify-between">
       <div className="flex gap-2 md:gap-4 lg:gap-6 justify-between">

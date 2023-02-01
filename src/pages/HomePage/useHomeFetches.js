@@ -1,5 +1,5 @@
 import { useEffect, useReducer } from "react";
-import customFetch from "../helper-functions/customFetch";
+import customFetch from "../../helper-functions/customFetch";
 
 function fetchReducer(state, action) {
   if (action.type === "top") return { ...state, top: action.payload };

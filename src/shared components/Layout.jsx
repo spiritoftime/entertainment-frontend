@@ -1,8 +1,8 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Navbar from "./Navbar";
-import attribution from "../assets/attribution.svg";
 import SearchBar from "./SearchBar";
+import Footer from "./Footer";
 const Layout = () => {
   return (
     <main className="min-h-screen bg-darkBlue">
@@ -11,14 +11,7 @@ const Layout = () => {
         <SearchBar />
         <Outlet></Outlet>
       </div>
-      <footer className="min-w-full flex flex-col gap-2 p-4">
-        <p className="text-gray-400	 mx-auto">Credits To:</p>
-        <img
-          className="w-[150px] mx-auto "
-          alt="Attribution image to TMDB"
-          src={attribution}
-        />
-      </footer>
+      <Footer />
     </main>
   );
 };

@@ -12,10 +12,10 @@ const Film = (props) => {
   const navigateHandler = () => {
     navigate(relativePath);
   };
-  const bookmarkHandler = (e) => {
-    e.stopPropagation();
-    if (!authDetails.isAuth) navigate("/login");
-  };
+  // const bookmarkHandler = (e) => {
+  //   e.stopPropagation();
+  //   if (!authDetails.isAuth) navigate("/login");
+  // };
   return (
     <div
       onClick={navigateHandler}

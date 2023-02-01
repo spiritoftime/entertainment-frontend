@@ -2,7 +2,7 @@ import Film from "./Film";
 import classes from "./homepage.module.css";
 import LoadingSpinner from "../../shared components/LoadingSpinner";
 
-import useHomeFetches from "../../custom hooks/useHomeFetches";
+import useHomeFetches from "./useHomeFetches";
 import Label from "../../shared components/Label";
 import Grid from "../../shared components/Grid";
 import TrendingMovie from "./TrendingMovie";

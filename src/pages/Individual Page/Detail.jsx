@@ -5,7 +5,7 @@ const Detail = ({ title, contentType = "", content }) => {
     contentType === "language"
       ? new Intl.DisplayNames([content], { type: "language" })
       : "";
-  console.log(languageNames);
+
   return (
     <div className="flex text-center flex-col gap-3">
       <p className="text-gray-500 font-normal">{title}</p>

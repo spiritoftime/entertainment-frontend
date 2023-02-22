@@ -1,4 +1,5 @@
 # entertainment-frontend
+# Deployed Link: https://spiritandtime-movie-app.onrender.com/
 
 # Challenges faced:
 Overall, the main problems I had was handling the fetching, routing as well as the query params.
